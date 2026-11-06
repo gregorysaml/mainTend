@@ -1,0 +1,44 @@
+.profile-editor{margin:1rem 0}
+.profile-editor-compact{margin:0}.vehicle-hero .profile-editor-compact{margin:.8rem 0}.profile-editor-compact .profile-open{min-height:44px;padding:.6rem .85rem;font-size:.78rem}
+.profile-open{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;min-height:48px;padding:.9rem 1rem;border:1px solid var(--line);border-radius:10px;background:var(--panel-raised);color:var(--text);font-size:.85rem;font-weight:650;text-align:left}
+.profile-open span{color:var(--action);font-size:1.2rem}
+.profile-dialog{width:min(1080px,calc(100% - 48px));max-width:none;max-height:calc(100dvh - 48px);padding:0;border:1px solid var(--line);border-radius:16px;background:var(--bg);color:var(--text);box-shadow:0 24px 100px #00000066;overflow:hidden}
+.profile-dialog[open]{display:flex;flex-direction:column}
+.profile-dialog::backdrop{background:#030912b8;backdrop-filter:blur(5px)}
+.profile-dialog-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.3rem 1.5rem;background:var(--panel);border-bottom:1px solid var(--line);flex-shrink:0}
+.profile-dialog-header h2{margin:.4rem 0;font-size:1.5rem}
+.profile-dialog-header p{margin:0;color:var(--text-muted);font-size:.8rem;overflow-wrap:anywhere}
+.profile-dialog-header strong{color:var(--text);font-family:ui-monospace,monospace}
+.profile-close{display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--panel-raised);color:var(--text);flex-shrink:0}
+.profile-dialog-body{padding:1.3rem 1.5rem;overflow-y:auto;overscroll-behavior:contain;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;min-height:0}
+.profile-dialog-body>.panel-note,.profile-dialog-body>.profile-feedback,.profile-dialog-body>.profile-history{grid-column:1/-1;margin:0}
+.profile-edit-section{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:1rem;min-width:0;align-self:start}
+.profile-edit-section>h3{margin:0 0 .8rem;font-size:1rem}
+.profile-section-tyres{grid-column:1/-1}
+.profile-edit-form,.profile-form-content{display:grid;gap:1rem;min-width:0}
+.profile-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem}
+.profile-edit-form label{display:grid;gap:.4rem;font-size:.8rem;min-width:0;color:var(--text-muted)}
+.profile-edit-form input,.profile-edit-form textarea{width:100%;min-width:0;box-sizing:border-box}
+.profile-edit-form input[type=file]{padding:.7rem;overflow:hidden}
+.profile-edit-form fieldset{min-width:0;border:1px solid var(--line);border-radius:10px;padding:1rem;margin:0}
+.profile-edit-form fieldset.profile-form-content{border:0;padding:0;border-radius:0}
+.profile-edit-form legend{text-transform:capitalize;font-size:.85rem;padding:0 .5rem}
+.profile-edit-form fieldset fieldset>button{margin-top:1rem}
+.profile-edit-form small{color:var(--text-muted)}
+.profile-secondary{background:transparent;color:var(--text);border:1px solid var(--line);padding:.65rem .8rem;min-height:44px;border-radius:9px;font-size:.8rem}
+.profile-form-content>button{justify-self:start}
+.profile-save{min-height:44px;border:0;border-radius:9px;background:var(--action);color:var(--bg);padding:.75rem 1rem;font-size:.8rem;font-weight:700}
+.profile-section-tyres .profile-form-content{grid-template-columns:repeat(2,minmax(0,1fr))}
+.profile-section-tyres .profile-form-content>p,.profile-section-tyres .profile-form-content>label,.profile-section-tyres .profile-form-content>button{grid-column:1/-1}
+.profile-feedback{border-left:3px solid var(--action);padding:.7rem;overflow-wrap:anywhere;font-size:.8rem}
+.profile-photo-preview{width:100%;max-width:450px;max-height:220px;object-fit:contain;border-radius:10px;border:1px solid var(--line)}
+.profile-history{padding:1rem;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.profile-history article{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.profile-history small{display:block;color:var(--text-muted);margin-top:.3rem}
+.profile-history pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.7rem;max-height:300px;overflow:auto}
+.profile-dialog-footer{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding:.8rem 1.5rem;background:var(--panel);border-top:1px solid var(--line);flex-shrink:0}
+.profile-dialog-footer p{margin:0;color:var(--text-muted);font-size:.75rem}
+.profile-dialog-footer>div{display:flex;gap:.5rem;flex-wrap:wrap}
+.identity-upload-photo{width:100%;height:100px;object-fit:cover;border-radius:8px}
+.owner-vehicle-photo{width:100%;height:140px;object-fit:cover;border-radius:10px;margin-top:1rem}
+@media(max-width:760px){.profile-dialog{width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:12px}.profile-dialog-header{padding:1rem}.profile-dialog-header h2{font-size:1.2rem}.profile-dialog-body{grid-template-columns:1fr;padding:1rem}.profile-section-tyres .profile-form-content{grid-template-columns:1fr}.profile-fields{grid-template-columns:1fr}.profile-form-content>button{width:100%}.profile-dialog-footer{padding:.75rem 1rem;flex-wrap:wrap}.profile-dialog-footer>div{width:100%}.identity-upload-photo{height:70px}}

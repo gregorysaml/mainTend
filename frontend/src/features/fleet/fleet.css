@@ -1,0 +1,15 @@
+.fleet-summary{grid-template-columns:repeat(4,minmax(0,1fr))}
+.fleet-metric{color:var(--text);text-align:left;gap:.75rem;min-width:0;font:inherit}
+.fleet-metric>span:last-child{min-width:0}.fleet-metric small:last-child{font-size:.65rem;line-height:1.5;margin-top:.35rem}
+.fleet-metric:hover,.fleet-metric.metric-selected{border-color:var(--action);background:var(--panel-raised)}
+.fleet-controls{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:1.2rem;margin:1rem 0}
+.fleet-control-heading{display:flex;justify-content:space-between;gap:1rem;align-items:center}.fleet-control-heading h2{margin:.35rem 0;font-size:1.2rem}.fleet-control-heading p{margin:0;color:var(--text-muted);font-size:.72rem}
+.fleet-filter-fields{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr) auto;gap:.7rem;align-items:end;margin-top:1rem}
+.fleet-filter-fields label{display:grid;gap:.4rem;color:var(--text-muted);font-size:.72rem}.fleet-filter-fields input,.fleet-filter-fields select{width:100%;font-size:.8rem;min-height:44px}
+.fleet-reset{padding:.75rem .9rem;min-height:44px;background:var(--action-soft);color:var(--action);border:1px solid var(--line);border-radius:9px;font-size:.8rem;font-weight:600}
+.fleet-results{font-size:.75rem;color:var(--text-muted);margin:1rem 0 0}.fleet-filter-help p{font-size:.75rem;color:var(--text-muted);margin-bottom:0}
+.fleet-record-summary{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:1rem;padding:1rem 0;margin-top:1rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fleet-record-summary>div{min-width:0}.fleet-record-summary small{display:block;font-size:.7rem;color:var(--text-muted);line-height:1.6;overflow-wrap:anywhere}.fleet-record-summary strong{display:block;font-size:.82rem;line-height:1.6;margin:.3rem 0}
+.fleet-empty h3{margin-top:0}.fleet-empty button{margin-top:1rem}
+@media(max-width:1250px){.fleet-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.fleet-filter-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.fleet-controls{padding:1rem}.fleet-control-heading{align-items:stretch;flex-direction:column}.fleet-filter-fields{grid-template-columns:1fr}.fleet-record-summary{grid-template-columns:1fr;gap:.75rem}.fleet-summary .summary-card{display:flex;align-items:flex-start}.fleet-summary .metric-icon{flex-shrink:0}.fleet-summary .summary-card strong{font-size:1.65rem}}

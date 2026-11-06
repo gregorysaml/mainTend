@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme inline {
+  --color-background: hsl(var(--background)); --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card)); --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary)); --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary)); --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted)); --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent)); --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-warning: hsl(var(--warning)); --color-synthetic: hsl(var(--synthetic));
+  --color-destructive: hsl(var(--destructive)); --color-border: hsl(var(--border));
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+:root, :root[data-theme=light] {
+  color-scheme: light;
+  --background: 210 40% 98%; --foreground: 222 47.4% 11.2%;
+  --card: 0 0% 100%; --card-foreground: 222 47.4% 11.2%;
+  --popover: 0 0% 100%; --popover-foreground: 222 47.4% 11.2%;
+  --primary: 174.4 83.9% 31.6%; --primary-foreground: 0 0% 100%; --primary-dark: 175.3 77.4% 26.1%; --primary-light: 166.5 76.5% 89.8%;
+  --secondary: 210 40% 96.1%; --secondary-foreground: 215.3 25% 26.7%;
+  --muted: 210 40% 96.1%; --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 166.2 76.5% 96.7%; --accent-foreground: 175.3 77.4% 26.1%;
+  --warning: 32.1 94.6% 43.7%; --warning-foreground: 32 88% 30%; --warning-soft: 48 96.5% 88.8%;
+  --synthetic: 262.1 83.3% 57.8%; --synthetic-foreground: 262 65% 42%; --synthetic-soft: 250 100% 96.5%;
+  --success: 160.1 93.8% 30.4%; --success-foreground: 160 82% 24%; --success-soft: 152 81% 96%;
+  --destructive: 0 72.2% 50.6%; --destructive-foreground: 0 0% 100%;
+  --border: 214.3 31.8% 91.4%; --input: 214.3 31.8% 91.4%; --ring: 174.4 83.9% 31.6%; --radius: .75rem;
+}
+:root[data-theme=dark] {
+  color-scheme: dark;
+  --background: 214.3 38.9% 7.1%; --foreground: 210 40% 96%;
+  --card: 215 32% 11%; --card-foreground: 210 40% 96%; --popover: 215 32% 11%; --popover-foreground: 210 40% 96%;
+  --primary: 172 66% 50%; --primary-foreground: 216 40% 8%; --primary-dark: 172 60% 43%; --primary-light: 173 49% 15%;
+  --secondary: 216 28% 15%; --secondary-foreground: 214 25% 88%; --muted: 216 28% 15%; --muted-foreground: 215 19% 68%;
+  --accent: 173 49% 15%; --accent-foreground: 172 66% 65%;
+  --warning: 38 92% 65%; --warning-foreground: 38 92% 72%; --warning-soft: 33 45% 15%;
+  --synthetic: 263 85% 76%; --synthetic-foreground: 263 85% 82%; --synthetic-soft: 263 35% 17%;
+  --success: 160 62% 60%; --success-foreground: 160 62% 66%; --success-soft: 160 35% 13%;
+  --destructive: 0 84% 72%; --destructive-foreground: 216 40% 8%;
+  --border: 215 23% 21%; --input: 215 23% 21%; --ring: 172 66% 50%;
+}
+:root {
+  font-family: var(--font-sans); font-size: 16px; font-synthesis: none; -webkit-font-smoothing: antialiased;
+  /* Existing feature styles use these aliases, with the same semantic tokens. */
+  --bg: hsl(var(--background)); --panel: hsl(var(--card)); --panel-raised: hsl(var(--secondary));
+  --text: hsl(var(--foreground)); --text-muted: hsl(var(--muted-foreground)); --line: hsl(var(--border)); --nav: hsl(var(--card));
+  --action: hsl(var(--primary)); --action-soft: hsl(var(--accent)); --blue: hsl(var(--primary));
+  --green: hsl(var(--success-foreground)); --green-soft: hsl(var(--success-soft));
+  --amber: hsl(var(--warning-foreground)); --amber-soft: hsl(var(--warning-soft));
+  --red: hsl(var(--destructive)); --purple: hsl(var(--synthetic-foreground)); --purple-soft: hsl(var(--synthetic-soft));
+  --shadow: 0 1px 2px rgb(15 23 42 / .04); --card-radius: 14px;
+  color: var(--text); background: var(--bg);
+}
+body { font-size: 15px; line-height: 1.5; }
+input, select, textarea { background: var(--panel); }
+:where(button, a, input, select, textarea, summary):focus-visible { outline: 2px solid hsl(var(--ring)); outline-offset: 3px; }
+.ui-button { border: 1px solid transparent; text-decoration: none; font-family: inherit; cursor: pointer; }
+.ui-button-primary { background: var(--action); color: hsl(var(--primary-foreground)); box-shadow: var(--shadow); }
+.ui-button-primary:hover { background: hsl(var(--primary-dark)); }
+.ui-button-secondary { background: var(--panel); color: var(--text); border-color: var(--line); }
+.ui-button-secondary:hover, .ui-button-ghost:hover { background: var(--panel-raised); }
+.ui-button-ghost { background: transparent; color: var(--text-muted); }
+.ui-button-destructive { background: hsl(var(--destructive)); color: hsl(var(--destructive-foreground)); }
+.ui-card { min-width: 0; border: 1px solid var(--line); border-radius: var(--card-radius); background: var(--panel); box-shadow: var(--shadow); }
+.ui-card-header { padding: 24px 24px 0; }.ui-card-title { margin: 6px 0; font-size: 18px; font-weight: 600; line-height: 24px; }
+.ui-card-description { color: var(--text-muted); font-size: 13px; margin: 0; line-height: 20px; }.ui-card-content { padding: 20px 24px 24px; }
+.ui-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 9999px; font-size: 11px; font-weight: 600; line-height: 16px; }
+.ui-badge-neutral { background: var(--panel-raised); color: var(--text-muted); }
+.ui-badge-warning { background: var(--amber-soft); color: var(--amber); border-color: color-mix(in srgb, var(--amber) 20%, transparent); }
+.ui-badge-synthetic { background: var(--purple-soft); color: var(--purple); border-color: color-mix(in srgb, var(--purple) 20%, transparent); }
+.ui-badge-success { background: var(--green-soft); color: var(--green); border-color: color-mix(in srgb, var(--green) 20%, transparent); }
+.ui-badge-danger { background: color-mix(in srgb, var(--red) 12%, var(--panel)); color: var(--red); }
+.ui-tabs-list { display: flex; padding: 4px; gap: 4px; border: 1px solid var(--line); background: var(--panel-raised); border-radius: 10px; }
+.ui-tabs-trigger { flex: 1; min-width: 0; min-height: 44px; border: 0; background: transparent; border-radius: 8px; padding: 8px 12px; color: var(--text-muted); font: inherit; font-size: 13px; font-weight: 600; }
+.ui-tabs-trigger[data-state=active] { color: var(--action); background: var(--panel); box-shadow: var(--shadow); }.ui-tabs-content { min-width: 0; }.ui-tabs-content[hidden] { display: none; }
+.ui-dialog-overlay { position: fixed; inset: 0; background: #02061799; backdrop-filter: blur(4px); z-index: 1100; }
+.ui-dialog-content { position: fixed; inset: 50% auto auto 50%; transform: translate(-50%, -50%); z-index: 1101; box-shadow: 0 20px 25px -5px #0003; }
+.ui-tooltip { padding: 8px 12px; background: var(--text); color: var(--bg); font-size: 12px; border-radius: 8px; box-shadow: var(--shadow); z-index: 1200; }.ui-tooltip-arrow { fill: var(--text); }
+.ui-table-scroll { overflow-x: auto; }.ui-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }.ui-table th { font-weight: 500; color: var(--text-muted); background: var(--panel-raised); }.ui-table td,.ui-table th { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+@media(max-width:680px) { .ui-card-header { padding: 20px 16px 0; }.ui-card-content { padding: 16px; } }

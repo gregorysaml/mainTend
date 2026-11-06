@@ -1,0 +1,24 @@
+.side-nav a{display:flex;align-items:center;gap:.8rem}
+.nav-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.demo-profile label{display:grid;gap:.3rem;color:var(--text-muted);font-size:.65rem}
+.demo-profile select{padding:.6rem .7rem;font-size:.8rem;min-height:40px}
+.settings-link{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;padding:.65rem .9rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:.8rem;text-decoration:none}
+.settings-link:hover,.settings-link.selected{color:var(--action);border-color:var(--action);background:var(--action-soft)}
+.sidebar-utilities{margin-top:auto;padding:1rem .4rem 0;border-top:1px solid var(--line);display:flex;align-items:center}
+.sidebar-settings{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border:1px solid transparent;border-radius:11px;color:var(--text-muted);text-decoration:none}
+.sidebar-settings:hover{background:var(--panel-raised);color:var(--text)}
+.sidebar-settings.selected{background:var(--action-soft);color:var(--action);border-color:color-mix(in srgb,var(--action) 22%,transparent)}
+.sidebar-settings:focus-visible{outline:2px solid var(--action);outline-offset:3px}
+@media(max-width:1050px) and (min-width:681px){.sidebar-utilities{padding-inline:0;justify-content:center}}
+@media(max-width:1250px){.settings-link span{display:none}.settings-link{padding:.65rem}}
+@media(max-width:680px){
+  .header-tools{flex-wrap:wrap}.page-heading{min-width:0}.settings-link{min-height:42px;padding:.6rem}
+  .sidebar{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:.25rem;position:fixed;top:auto;bottom:0;left:0;right:0;padding:.4rem .4rem calc(.4rem + env(safe-area-inset-bottom,0px));z-index:1001;border-top:1px solid var(--line);border-right:0;background:var(--nav);box-shadow:0 -6px 24px #00000015}
+  .sidebar .brand{display:none}
+  .sidebar-utilities{order:-1;margin:0;padding:0;border-top:0;border-right:1px solid var(--line);align-self:stretch}
+  .side-nav{grid-template-columns:repeat(var(--nav-count,5),minmax(0,1fr));gap:.2rem}
+  .side-nav a{flex-direction:column;justify-content:center;gap:.3rem;min-height:57px;padding:.45rem 0;font-size:.62rem;text-align:center}
+  .side-nav a>span:last-child{display:inline;max-width:100%;overflow-wrap:anywhere;line-height:1.2}
+  .workspace main{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+  html{scroll-padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+}

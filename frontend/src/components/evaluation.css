@@ -1,0 +1,41 @@
+.notice-test-link{display:inline-block;margin-left:.6rem;color:var(--amber);font-weight:750;white-space:nowrap}
+.evaluation-centre{min-width:0}
+.evaluation-intro{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin:1.4rem 0}
+.evaluation-intro h2{font-size:1.8rem;font-weight:600;margin:.5rem 0}
+.evaluation-intro p{font-size:.82rem;color:var(--text-muted);max-width:760px}
+.run-scenarios,.reviewer-panel button{background:var(--action);color:var(--bg);border:0;border-radius:10px;padding:.8rem 1.1rem;font-size:.8rem;font-weight:700;min-height:44px}
+.run-scenarios{white-space:nowrap}
+.evaluation-safety{padding:1rem;border:1px solid var(--line);background:var(--action-soft);border-radius:12px;font-size:.8rem;line-height:1.7}
+.evaluation-feedback{font-size:.8rem;color:var(--green)}
+.evaluation-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem;margin:1rem 0}
+.evaluation-metrics>div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:1rem}
+.evaluation-metrics small{display:block;color:var(--text-muted);font-size:.73rem}
+.evaluation-metrics strong{display:block;font-size:1.9rem;font-weight:550;margin-top:.5rem}
+.count-pass{color:var(--green)}
+.evaluation-toolbar{display:flex;align-items:end;gap:1rem;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);padding:1rem;border-radius:14px}
+.evaluation-toolbar label,.reviewer-panel label{display:grid;gap:.5rem;min-width:0;color:var(--text-muted);font-size:.75rem}
+.evaluation-toolbar label:first-child{flex:1;min-width:220px}
+.evaluation-toolbar select{width:100%;max-width:100%}
+.evaluation-downloads{display:flex;gap:.6rem}
+.evaluation-downloads a{padding:.8rem;background:var(--action-soft);border-radius:9px;font-size:.75rem;text-decoration:none;white-space:nowrap}
+.scenario-list{display:grid;gap:1rem;margin-top:1.3rem}
+.scenario-card,.reviewer-panel,.evaluation-method{padding:1.15rem;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius)}
+.scenario-card h3{font-size:1.1rem;font-weight:600;margin:.7rem 0}
+.scenario-objective{font-size:.8rem;color:var(--text-muted)}
+.comparison-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem}
+.comparison-grid section{min-width:0;background:var(--panel-raised);border:1px solid var(--line);padding:1rem;border-radius:10px}
+.comparison-grid h4{font-size:.72rem;color:var(--action);margin:0 0 .7rem}
+.evaluation-centre pre{font-family:ui-monospace,Consolas,monospace;font-size:.73rem;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;margin:.3rem 0 0}
+.comparison-grid .muted{font-size:.8rem}
+.hash-value{display:block;font-family:ui-monospace,monospace;font-size:.67rem;line-height:1.8;overflow-wrap:anywhere;color:var(--text-muted)}
+.evaluation-method{margin-top:1.2rem}
+.evaluation-method ul{padding-left:1.1rem;font-size:.8rem;color:var(--text-muted);line-height:1.9}
+.evaluation-method h3{font-size:1rem}
+.reviewer-panel{margin-top:1rem}.reviewer-panel h3{margin:.3rem 0}
+.reviewer-panel form{display:grid;gap:.8rem;margin-top:1rem}
+.reviewer-panel textarea{width:100%;resize:vertical}
+.reviewer-panel button{justify-self:start}
+.reviewer-note{border-left:2px solid var(--action);padding:.6rem .9rem;margin-top:1rem;background:var(--panel-raised)}
+.reviewer-note small{font-size:.68rem;color:var(--text-muted)}
+.reviewer-note p{font-size:.8rem;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:680px){.evaluation-intro{flex-direction:column;align-items:stretch;gap:.5rem}.evaluation-intro h2{font-size:1.45rem}.evaluation-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.comparison-grid{grid-template-columns:1fr}.evaluation-toolbar{align-items:stretch}.evaluation-toolbar label{width:100%}.evaluation-toolbar label:first-child{min-width:0}.evaluation-downloads{width:100%}.evaluation-downloads a{flex:1;text-align:center}.scenario-card .card-heading{align-items:flex-start}.scenario-card .section-kicker{font-size:.6rem;line-height:1.7}.reviewer-panel button{width:100%}.notice-test-link{margin:.3rem 0 0;display:block}}
