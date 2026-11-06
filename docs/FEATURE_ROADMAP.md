@@ -1,0 +1,12 @@
+# MainTend staged feature delivery
+
+The user requested implementation one feature at a time, with their own review before the next stage. Do not implement subsequent stages automatically while waiting for feedback.
+
+1. Test centre: isolated backend scenario execution, expected/observed comparisons, persistent reports, append-only reviewer notes and JSON/CSV export. Delivered; user requested proceeding to stage 2.
+2. Fleet filters and clearer summary: condition warnings, insufficient data, pending actions, visible observation times, combined search/sort and filtered map. Delivered; user requested proceeding to stage 3. Assessment settings/evidence exports moved to the dedicated Settings page at the user's request.
+3. Maintenance scheduling: user-selected date and priority, due/overdue indicators, editable schedule with audit history and task filters for both fleet and owner; no external bookings or notifications. Delivered; user requested stage 4. Vehicle-card registration/mileage/model identity improved as additionally requested.
+4. Editable vehicle profile: mileage, service, tyres, equipment and user-selected local photo, with validated transactional persistence, revision conflict checks and before/after audit history. Both fleet (B2B) and owner (B2C). Delivered, including five-section modal and edit-button placement; user requested stage 5.
+5. Structured reported inspection outcomes: confirmed/not confirmed/further investigation, separate from warning resolution. Delivered for both profiles, with append-only provenance/history, follow-up filter, scoped transactional API, stale-revision checks and evidence exports. User subsequently requested computed examples.
+6. Computed predictive examples: user selected cooling first, then explicitly requested engine lubrication on Delivery Van 03. Both systems now support scoped fleet/owner snapshots, isolated comparable-session synthetic data, calculated bounded linear projections, context/data gates, responsive graphs, retained in-app notifications, immutable evidence, linked tasks and held-out synthetic baseline comparisons. Fleet cooling is on DEM-1002; lubrication is on DEM-1003. Neither is a validated failure predictor, RUL estimate or automatic diagnosis.
+
+Lubrication is awaiting the user's review; do not implement another scenario automatically. No thesis wording or separate chat has been modified. See `COOLING_SCENARIO.md` and `LUBRICATION_SCENARIO.md` for implementation/evaluation boundaries.
