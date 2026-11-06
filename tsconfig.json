@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "paths": { "@/*": ["./frontend/src/*"] },
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["backend/**/*.ts", "frontend/**/*.ts", "frontend/**/*.tsx", "shared/**/*.ts"]
+}
