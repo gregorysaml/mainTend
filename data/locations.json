@@ -1,0 +1,6 @@
+[
+  {"vehicleId":"FLEET-001","latitude":37.9838,"longitude":23.7275,"label":"Athens Centre","recordedAt":"2026-10-04T08:25:00.000Z"},
+  {"vehicleId":"FLEET-002","latitude":37.9467,"longitude":23.6478,"label":"Piraeus","recordedAt":"2026-10-04T08:18:00.000Z"},
+  {"vehicleId":"FLEET-003","latitude":38.0567,"longitude":23.8083,"label":"Marousi","recordedAt":"2026-09-29T08:00:00.000Z"},
+  {"vehicleId":"OWNER-001","latitude":37.9924,"longitude":23.7691,"label":"Zografou","recordedAt":"2026-10-04T07:50:00.000Z"}
+]

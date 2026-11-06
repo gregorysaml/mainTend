@@ -1,0 +1,9 @@
+[
+  {"vehicleId":"FLEET-001","parameter":"engine_coolant_temperature","value":91,"unit":"°C","observedAt":"2026-10-04T08:20:00.000Z"},
+  {"vehicleId":"FLEET-001","parameter":"battery_voltage","value":12.5,"unit":"V","observedAt":"2026-10-04T08:20:00.000Z"},
+  {"vehicleId":"FLEET-002","parameter":"engine_coolant_temperature","value":112,"unit":"°C","observedAt":"2026-10-04T08:10:00.000Z"},
+  {"vehicleId":"FLEET-002","parameter":"battery_voltage","value":12.4,"unit":"V","observedAt":"2026-10-04T08:10:00.000Z"},
+  {"vehicleId":"FLEET-003","parameter":"battery_voltage","value":12.3,"unit":"V","observedAt":"2026-09-29T08:00:00.000Z"},
+  {"vehicleId":"OWNER-001","parameter":"engine_coolant_temperature","value":93,"unit":"°C","observedAt":"2026-10-04T07:45:00.000Z"},
+  {"vehicleId":"OWNER-001","parameter":"battery_voltage","value":12.2,"unit":"V","observedAt":"2026-10-04T07:45:00.000Z"}
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "vehicleId":"OWNER-001","modelYear":2019,"fuelType":"Petrol","transmission":"Manual · 6-speed","engineCc":1398,"colour":"Silver","purchasedAt":"2021-04-15","lastServiceAt":"2026-06-15","lastServiceKm":64000,
+    "photoUrl":"/images/demo-hatchback.png","photoDescription":"AI-generated illustrative compact hatchback. Not a photo of an actual owner vehicle.",
+    "equipment":["Air conditioning","Bluetooth audio","Cruise control","Rear parking sensors","Rear-view camera","Tyre-pressure monitoring (TPMS)","ABS / stability control","ISOFIX child-seat anchors"],
+    "odometerHistory":[
+      {"kilometres":64000,"recordedAt":"2026-06-15T10:00:00.000Z","source":"Synthetic service record"},
+      {"kilometres":67210,"recordedAt":"2026-09-01T08:00:00.000Z","source":"Synthetic owner entry"},
+      {"kilometres":68340,"recordedAt":"2026-10-04T07:45:00.000Z","source":"Synthetic owner entry"}
+    ],
+    "tyres":[
+      {"position":"front left","brand":"Demo Tyres","model":"Touring A","size":"205/55 R16 91V","season":"All-season","dotCode":"1825","installedAt":"2025-06-01","installedKm":54000,"pressureBar":2.2,"treadMm":4.8,"measuredAt":"2026-10-03T09:00:00.000Z","lastRotationAt":"2026-06-15"},
+      {"position":"front right","brand":"Demo Tyres","model":"Touring A","size":"205/55 R16 91V","season":"All-season","dotCode":"1825","installedAt":"2025-06-01","installedKm":54000,"pressureBar":2.2,"treadMm":4.7,"measuredAt":"2026-10-03T09:00:00.000Z","lastRotationAt":"2026-06-15"},
+      {"position":"rear left","brand":"Demo Tyres","model":"Touring A","size":"205/55 R16 91V","season":"All-season","dotCode":"1825","installedAt":"2025-06-01","installedKm":54000,"pressureBar":2.1,"treadMm":5.2,"measuredAt":"2026-10-03T09:00:00.000Z","lastRotationAt":"2026-06-15"},
+      {"position":"rear right","brand":"Demo Tyres","model":"Touring A","size":"205/55 R16 91V","season":"All-season","dotCode":"1825","installedAt":"2025-06-01","installedKm":54000,"pressureBar":2.1,"treadMm":5.1,"measuredAt":"2026-10-03T09:00:00.000Z","lastRotationAt":"2026-06-15"}
+    ]
+  },
+  {
+    "vehicleId":"FLEET-001","modelYear":2022,"fuelType":"Diesel","transmission":"Manual · 6-speed","engineCc":1997,"colour":"White","purchasedAt":"2022-03-10","lastServiceAt":"2026-08-10","lastServiceKm":88000,
+    "equipment":["Air conditioning","Cargo partition","Rear parking sensors","Bluetooth audio"],
+    "odometerHistory":[{"kilometres":88000,"recordedAt":"2026-08-10T10:00:00.000Z","source":"Synthetic service record"},{"kilometres":92450,"recordedAt":"2026-10-04T08:20:00.000Z","source":"Synthetic fleet entry"}],
+    "tyres":[
+      {"position":"front left","brand":"Demo Tyres","model":"Cargo B","size":"215/65 R16C 109T","season":"Summer","dotCode":"0926","installedAt":"2026-03-20","installedKm":73000,"pressureBar":3.2,"treadMm":5.5,"measuredAt":"2026-10-03T07:00:00.000Z","lastRotationAt":"2026-08-10"},
+      {"position":"front right","brand":"Demo Tyres","model":"Cargo B","size":"215/65 R16C 109T","season":"Summer","dotCode":"0926","installedAt":"2026-03-20","installedKm":73000,"pressureBar":3.2,"treadMm":5.4,"measuredAt":"2026-10-03T07:00:00.000Z","lastRotationAt":"2026-08-10"},
+      {"position":"rear left","brand":"Demo Tyres","model":"Cargo B","size":"215/65 R16C 109T","season":"Summer","dotCode":"0926","installedAt":"2026-03-20","installedKm":73000,"pressureBar":3.4,"treadMm":6.0,"measuredAt":"2026-10-03T07:00:00.000Z","lastRotationAt":"2026-08-10"},
+      {"position":"rear right","brand":"Demo Tyres","model":"Cargo B","size":"215/65 R16C 109T","season":"Summer","dotCode":"0926","installedAt":"2026-03-20","installedKm":73000,"pressureBar":3.4,"treadMm":5.9,"measuredAt":"2026-10-03T07:00:00.000Z","lastRotationAt":"2026-08-10"}
+    ]
+  },
+  {
+    "vehicleId":"FLEET-002","modelYear":2020,"fuelType":"Diesel","transmission":"Automatic","engineCc":1997,"colour":"White","purchasedAt":"2020-07-01","lastServiceAt":"2026-07-12","lastServiceKm":115000,
+    "equipment":["Air conditioning","Navigation","Cargo partition","Rear-view camera"],
+    "odometerHistory":[{"kilometres":115000,"recordedAt":"2026-07-12T10:00:00.000Z","source":"Synthetic service record"},{"kilometres":121800,"recordedAt":"2026-10-04T08:10:00.000Z","source":"Synthetic fleet entry"}],"tyres":[]
+  },
+  {
+    "vehicleId":"FLEET-003","modelYear":2021,"fuelType":"Diesel","transmission":"Manual · 6-speed","engineCc":1499,"colour":"Grey","purchasedAt":"2021-11-01","lastServiceAt":"2026-06-20","lastServiceKm":97000,
+    "equipment":["Air conditioning","Bluetooth audio","Cargo partition"],
+    "odometerHistory":[{"kilometres":97000,"recordedAt":"2026-06-20T10:00:00.000Z","source":"Synthetic service record"},{"kilometres":103200,"recordedAt":"2026-09-29T08:00:00.000Z","source":"Synthetic fleet entry"}],"tyres":[]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id":"FORECAST-OWNER-001",
+    "vehicleId":"OWNER-001",
+    "title":"Possible charging-system issue",
+    "explanation":"A simulated forecast suggests arranging an inspection within 14 days. This is a pre-entered demonstration input, not an output from a trained predictive model.",
+    "forecastAt":"2026-10-04T08:00:00.000Z",
+    "suggestedWindow":"Within 14 days"
+  }
+]

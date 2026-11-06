@@ -1,0 +1,25 @@
+{
+  "assessmentTime": "2026-10-04T09:00:00.000Z",
+  "observationMaxAgeHours": 48,
+  "requiredParameters": ["engine_coolant_temperature", "battery_voltage"],
+  "rules": [
+    {
+      "id": "DEMO-COOLANT-HIGH",
+      "parameter": "engine_coolant_temperature",
+      "operator": ">",
+      "threshold": 105,
+      "unit": "°C",
+      "title": "High coolant temperature observation",
+      "explanation": "The latest usable coolant temperature exceeds the demonstration threshold. This supports an inspection decision but does not identify or confirm a component fault."
+    },
+    {
+      "id": "DEMO-BATTERY-LOW",
+      "parameter": "battery_voltage",
+      "operator": "<",
+      "threshold": 11.8,
+      "unit": "V",
+      "title": "Low battery voltage observation",
+      "explanation": "The latest usable battery voltage is below the demonstration threshold. This is not a model-specific diagnostic limit."
+    }
+  ]
+}

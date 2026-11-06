@@ -1,0 +1,5 @@
+[
+  {"vehicleId":"FLEET-001","parameter":"battery_voltage","value":12.6,"unit":"V","observedAt":"2026-10-04T08:30:00.000Z"},
+  {"vehicleId":"UNKNOWN-99","parameter":"battery_voltage","value":12.1,"unit":"V","observedAt":"2026-10-04T08:30:00.000Z"},
+  {"vehicleId":"FLEET-001","parameter":"battery_voltage","value":"not-a-number","unit":"V","observedAt":"2026-10-04T08:30:00.000Z"}
+]

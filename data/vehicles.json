@@ -1,0 +1,6 @@
+[
+  {"id":"FLEET-001","displayName":"Delivery Van 01","registration":"DEM-1001","profile":"fleet","makeModel":"Demo Van A"},
+  {"id":"FLEET-002","displayName":"Service Van 02","registration":"DEM-1002","profile":"fleet","makeModel":"Demo Van B"},
+  {"id":"FLEET-003","displayName":"Delivery Van 03","registration":"DEM-1003","profile":"fleet","makeModel":"Demo Van C"},
+  {"id":"OWNER-001","displayName":"My Vehicle","registration":"DEM-2001","profile":"owner","makeModel":"Demo Hatchback"}
+]
